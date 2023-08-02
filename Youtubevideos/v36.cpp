@@ -27,7 +27,7 @@ Modes of Inheritance
 */
 
 // When we make an object of derived class the default constructor of Base class automatically gets called..
-// Therefore it is always necessory to make default constructor os base class..
+// Therefore it is always necessory to make default constructor of base class..
 
 class Base
 {
