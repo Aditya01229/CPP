@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+// In this we start selecting a position and find the perfect number fitting in that position. i.e. we start from the 0th position and fill t with the smallest element. Therefore this sorting is called selection sorting..
 
 void selection(int a[], int n){
     for (int i = 0; i < n-1; i++)
