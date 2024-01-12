@@ -1,5 +1,5 @@
 #include <iostream>
-#define MID ((start+end) / 2)
+// #define MID ((start+end) / 2)
 using namespace std;
 
 void sort(int arr[], int n){
@@ -8,9 +8,10 @@ void sort(int arr[], int n){
 
 int binarysearch(int arr[], int n, int key){
     int start = 0;
-    int end = n;
+    int end = n-1;
     while(start <= end){
-    // int MID = (start+end) / 2;
+    int MID = (start+end) / 2;
+    cout << MID << start << end << endl;
     if(arr[MID] == key){
         return MID;
     }
@@ -20,8 +21,8 @@ int binarysearch(int arr[], int n, int key){
     else if(arr[MID] < key){
         start = MID + 1;
     }
-    return -1;
     }
+    return -1;
 }
 int main(int argc, char const *argv[])
 {
